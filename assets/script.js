@@ -70,6 +70,61 @@ function renderNews(){
   if(preview) preview.innerHTML = news.slice(0,2).map(n => `<div class="mini-news"><p class="tag">${formatDate(n.date)}</p><h3>${n.title}</h3><p>${n.text}</p></div>`).join("");
 }
 
+
+function renderLeaders(){
+  const el = document.getElementById("leaders-grid");
+  if(!el || typeof leaders === "undefined") return;
+  el.innerHTML = leaders.map(p => {
+    const photo = p.image ? `<img src="${p.image}" alt="Foto de ${p.name}">` : initials(p.name);
+    return `<article class="leader-card">
+      <div class="leader-photo">${photo}</div>
+      <div>
+        <div class="leader-title">${p.title}</div>
+        <h3>${p.name}</h3>
+        <p class="leader-area">${p.area}</p>
+        <p class="leader-bio">${p.bio}</p>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+function renderTeamGroups(){
+  const el = document.getElementById("team-groups");
+  if(!el) return;
+  const input = document.getElementById("team-search");
+  const q = normalize(input ? input.value : "");
+  const order = ["Lab manager", "Pós-doc", "Doutoranda", "Doutorando", "Mestranda", "Apoio técnico de projeto", "Iniciação científica"];
+  const groupLabels = {
+    "Lab manager": "Gestão do laboratório",
+    "Pós-doc": "Pós-doutorado",
+    "Doutoranda": "Doutorado",
+    "Doutorando": "Doutorado",
+    "Mestranda": "Mestrado",
+    "Apoio técnico de projeto": "Apoio técnico de projeto",
+    "Iniciação científica": "Iniciação científica"
+  };
+
+  const filtered = team.filter(p => normalize(`${p.name} ${p.role} ${p.area}`).includes(q));
+  const grouped = {};
+  filtered.forEach(p => {
+    const label = groupLabels[p.role] || p.role;
+    if(!grouped[label]) grouped[label] = [];
+    grouped[label].push(p);
+  });
+
+  const labelOrder = ["Gestão do laboratório", "Pós-doutorado", "Doutorado", "Mestrado", "Apoio técnico de projeto", "Iniciação científica"];
+  el.innerHTML = labelOrder
+    .filter(label => grouped[label] && grouped[label].length)
+    .map(label => `<section class="team-group">
+      <h3>${label}</h3>
+      <div class="team-group-grid">
+        ${grouped[label].map(p => `<article class="person-card"><div class="avatar">${initials(p.name)}</div><span class="role">${p.role}</span><h3>${p.name}</h3><p>${p.area}</p></article>`).join("")}
+      </div>
+    </section>`)
+    .join("");
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const year = document.getElementById("current-year");
   if(year) year.textContent = new Date().getFullYear();
@@ -79,6 +134,8 @@ document.addEventListener("DOMContentLoaded", () => {
   renderYearTabs();
   renderPublicationsTimeline();
   renderTeam();
+  renderLeaders();
+  renderTeamGroups();
   renderNews();
 
   const rs = document.getElementById("research-search");
@@ -88,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if(ps) ps.addEventListener("input", renderPublicationsTimeline);
 
   const ts = document.getElementById("team-search");
-  if(ts) ts.addEventListener("input", renderTeam);
+  if(ts) ts.addEventListener("input", () => { renderTeam(); renderTeamGroups(); });
 
   const toggle = document.querySelector(".menu-toggle");
   if(toggle) toggle.addEventListener("click", () => document.querySelector(".nav-links").classList.toggle("open"));
