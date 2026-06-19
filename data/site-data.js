@@ -47,19 +47,80 @@ const publications = [
   {year: 2023, title: "Alternative Methods as Tools for Obesity Research: In Vitro and In Silico Approaches", journal: "Life", doi: "10.3390/life13010108"}
 ];
 
+
+const leaders = [
+  {
+    name: "Bruno Dallagiovanna",
+    title: "Chefe de Laboratório",
+    area: "Regulação pós-transcricional, células-tronco pluripotentes e diferenciação celular",
+    bio: "Atua no estudo de mecanismos moleculares que regulam a expressão gênica em células-tronco humanas, com foco em regulação pós-transcricional, RNAs, diferenciação celular e biologia computacional aplicada.",
+    image: ""
+  },
+  {
+    name: "Patrícia Shigunov",
+    title: "Chefe de Laboratório",
+    area: "Doenças genéticas raras e modelos celulares humanos",
+    bio: "Desenvolve pesquisas com células-tronco humanas e modelos in vitro voltados ao estudo molecular de doenças genéticas raras, diferenciação celular e desenvolvimento de ferramentas com potencial translacional.",
+    image: ""
+  },
+  {
+    name: "Marco Augusto Stimamiglio",
+    title: "Chefe de Laboratório",
+    area: "Medicina regenerativa, vesículas extracelulares e engenharia de tecidos",
+    bio: "Investiga células-tronco adultas, secretoma, vesículas extracelulares e estratégias de engenharia de tecidos aplicadas à regeneração tecidual e ao desenvolvimento de modelos biológicos.",
+    image: ""
+  },
+  {
+    name: "Alejandro Correa",
+    title: "Chefe de Laboratório",
+    area: "Biologia celular, biomateriais e modelos in vitro",
+    bio: "Atua em projetos relacionados à biologia celular, medicina regenerativa, biomateriais, modelos experimentais in vitro e desenvolvimento de abordagens aplicadas à saúde humana.",
+    image: ""
+  },
+  {
+    name: "Alessandra Melo de Aguiar",
+    title: "Chefe de Laboratório",
+    area: "Citotoxicidade, métodos alternativos e poluentes ambientais",
+    bio: "Coordena estudos voltados ao desenvolvimento de ensaios alternativos ao uso de animais, avaliação de citotoxicidade, nanotecnologia e efeitos de compostos ambientais em modelos celulares.",
+    image: ""
+  }
+];
+
+
 const team = [
   {name:"Crisciele Kuligovski", role:"Lab manager", area:"Mestre em Saúde"},
   {name:"Humberto Doriguêtto Gravina", role:"Pós-doc", area:"Biologia Molecular, Bioquímica e Imunologia"},
   {name:"Isabelle Leticia Zaboroski", role:"Pós-doc", area:"Doenças genéticas raras"},
-  {name:"Maria Julia Barison", role:"Pós-doc", area:"Medicina Regenerativa"},
+  {name:"Maria Julia Barison", role:"Pós-doc", area:"Biologia Celular, Biologia Molecular, Bioquímica e Medicina Regenerativa"},
   {name:"Maiara Vicentini", role:"Pós-doc", area:"Isolamento de vesículas / Medicina Regenerativa"},
   {name:"Rubens Gomes Júnior", role:"Pós-doc", area:"Regulação pós-transcricional na cardiomiogênese"},
   {name:"Vivien Patricia Garbin", role:"Pós-doc", area:"Medicina Regenerativa"},
-  {name:"Annanda Lyra Ribeiro", role:"Doutoranda", area:"Regulação pós-transcricional e lncRNAs"},
+
+  {name:"Annanda Lyra Ribeiro", role:"Doutoranda", area:"Regulação pós-transcricional de células-tronco pluripotentes e lncRNAs"},
   {name:"Evelin Brandão da Silva", role:"Doutoranda", area:"Doenças genéticas raras"},
+  {name:"Juliana Pamplona", role:"Doutoranda", area:"Citotoxicidade"},
+  {name:"Rodrigo Perez Lucas", role:"Doutorando", area:"Engenharia de tecidos e terapia celular"},
+  {name:"Rhaíza Stella Vieira França", role:"Doutoranda", area:"Biologia Molecular"},
+  {name:"Ronaldo Figueira de Oliveira", role:"Doutorando", area:"Medicina Regenerativa"},
+
+  {name:"Bruna Follador Bordim", role:"Mestranda", area:"Citotoxicidade"},
+  {name:"Gabriela Maria da Costa Ferreira", role:"Mestranda", area:"Medicina Regenerativa"},
+  {name:"Isabella Aguiar Dantas", role:"Mestranda", area:"Biologia Molecular"},
+  {name:"Julia Marques", role:"Mestranda", area:"Medicina Regenerativa"},
+  {name:"Luísa Lencioni de Mendonça", role:"Mestranda", area:"Medicina Regenerativa / Bioimpressão de Células-Tronco"},
+  {name:"Rafaela Martins", role:"Mestranda", area:"Medicina Regenerativa"},
+  {name:"Sandra Christina Kolodziejski", role:"Mestranda", area:"Toxicologia Celular"},
+
+  {name:"Alessandra Conti Gomes de Souza", role:"Apoio técnico de projeto", area:"Citotoxicidade"},
   {name:"Giovanna Nazaré de Barros Prezia", role:"Apoio técnico de projeto", area:"Bioinformática"},
-  {name:"Luísa Lencioni de Mendonça", role:"Mestranda", area:"Medicina Regenerativa / Bioimpressão"},
-  {name:"Bruna Follador Bordim", role:"Mestranda", area:"Citotoxicidade"}
+  {name:"Luana Pescke Soares", role:"Apoio técnico de projeto", area:"Engenharia genética e cultivo de células e fungos"},
+  {name:"Mateus Teixeira da Rocha", role:"Apoio técnico de projeto", area:"Medicina Regenerativa"},
+  {name:"Letícia Bassani Bonato", role:"Apoio técnico de projeto", area:"Medicina Regenerativa"},
+
+  {name:"Jhenifer Moreira Pietrobelli", role:"Iniciação científica", area:"Medicina Regenerativa"},
+  {name:"José Henrique Rosa Silva", role:"Iniciação científica", area:"Genética humana e biologia molecular"},
+  {name:"Nataly Barbieri Stunff", role:"Iniciação científica", area:"Genética humana e biologia molecular"},
+  {name:"Ana Claudia Takiguchi", role:"Iniciação científica", area:"Medicina Regenerativa"}
 ];
 
 const news = [
