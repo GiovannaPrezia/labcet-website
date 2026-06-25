@@ -254,133 +254,86 @@ footer{text-align:center;color:var(--muted);padding:28px}
   .team-group-grid{grid-template-columns:1fr}
 }
 
-/* ==========================================================
-   HOME HERO
-========================================================== */
 
-.home-hero-photo{
-    position:relative;
-    max-width:1180px;
-    height:460px;
-    margin:35px auto;
-    overflow:hidden;
-    border-radius:32px;
-    box-shadow:var(--shadow);
+/* ===== HOME: BANNER COM FOTO ===== */
+
+.home-hero-photo {
+  position: relative;
+  max-width: 1180px;
+  height: 430px;
+  margin: 34px auto 0;
+  border-radius: 32px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
 }
 
-.home-hero-photo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center 88%;
-    display:block;
+.home-hero-photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 80%;
+  display: block;
 }
 
-.glass-card{
-
-    position:absolute;
-
-    left:35px;
-    right:35px;
-    top:35px;
-
-    padding:30px 40px;
-
-    border-radius:26px;
-
-    background:rgba(15,30,40,.42);
-
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
-
-    border:1px solid rgba(255,255,255,.18);
-
-    color:white;
-
-    z-index:5;
-
+.home-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(12,31,38,.78) 0%, rgba(12,31,38,.46) 42%, rgba(12,31,38,.08) 100%);
+  z-index: 1;
 }
 
-.glass-card h1{
-
-    color:white;
-
-    font-size:62px;
-
-    margin:6px 0 10px;
-
-    line-height:.95;
-
+.home-hero-content {
+  position: absolute;
+  left: 42px;
+  bottom: 42px;
+  z-index: 2;
+  max-width: 680px;
+  color: white;
 }
 
-.glass-card .lead{
-
-    width:65%;
-
-    color:rgba(255,255,255,.92);
-
-    font-size:20px;
-
-    line-height:1.6;
-
+.home-hero-content h1 {
+  font-size: clamp(54px, 7vw, 88px);
+  margin: 8px 0 10px;
+  color: white;
+  line-height: .95;
 }
 
-.glass-card .eyebrow{
-
-    color:#F3AE8E;
-
-    text-transform:uppercase;
-
-    letter-spacing:.08em;
-
-    font-weight:800;
-
+.home-hero-content .lead {
+  max-width: 640px;
+  color: rgba(255,255,255,.9);
+  font-size: 19px;
 }
 
-.glass-card .hero-actions{
-
-    margin-top:22px;
-
+.home-hero-content .eyebrow {
+  color: #F3AE8E;
 }
 
-.photo-secondary{
-
-    background:rgba(255,255,255,.12);
-
-    color:white;
-
-    border:1px solid rgba(255,255,255,.35);
-
+.home-hero-content .hero-actions {
+  margin-top: 22px;
 }
 
-.photo-secondary:hover{
-
-    background:rgba(255,255,255,.22);
-
+.photo-secondary {
+  background: rgba(255,255,255,.16);
+  color: white;
+  border: 1px solid rgba(255,255,255,.38);
 }
 
-@media(max-width:900px){
+@media(max-width:850px){
+  .home-hero-photo {
+    height: 520px;
+    margin: 22px;
+    border-radius: 26px;
+  }
 
-    .home-hero-photo{
+  .home-hero-content {
+    left: 24px;
+    right: 24px;
+    bottom: 28px;
+  }
 
-        height:520px;
-
-        margin:20px;
-
-    }
-
-    .glass-card{
-
-        left:20px;
-        right:20px;
-        top:20px;
-
-    }
-
-    .glass-card .lead{
-
-        width:100%;
-
-    }
-
+  .home-hero-content h1 {
+    font-size: 58px;
+  }
 }
