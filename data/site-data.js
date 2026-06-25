@@ -1,9 +1,10 @@
 
 const researchLines = [
   {
-    title: "Regulação pós-transcricional em células-tronco",
-    tag: "RNA · Ribo-seq · diferenciação",
-    text: "Estudo de mecanismos pós-transcricionais que controlam processamento, estabilidade e tradução de mRNAs durante o comprometimento celular, com foco em RBPs, lncRNAs e diferenciação cardiomiogênica."
+  title: "Regulação pós-transcricional em células-tronco",
+  tag: "RNA · Ribo-seq · diferenciação",
+  text: "Estudo de mecanismos pós-transcricionais que controlam processamento, estabilidade e tradução de mRNAs durante o comprometimento celular, com foco em RBPs, lncRNAs e diferenciação cardiomiogênica.",
+  link: "pesquisa-regulacao-pos-transcricional.html"
   },
   {
     title: "Engenharia de tecidos e vesículas extracelulares",
