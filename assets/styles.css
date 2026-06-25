@@ -646,3 +646,43 @@ footer{text-align:center;color:var(--muted);padding:28px}
   }
 }
 
+/* ===== PAGE: PESQUISA BRUNO ===== */
+
+.research-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:50px;
+    align-items:start;
+}
+
+.research-sidebar{
+    position:sticky;
+    top:110px;
+}
+
+.leader-card-small{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:28px;
+    padding:28px;
+    box-shadow:var(--shadow);
+}
+
+.leader-card-small .leader-photo{
+    width:72px;
+    height:72px;
+    border-radius:20px;
+    margin-bottom:18px;
+}
+
+@media(max-width:900px){
+
+    .research-layout{
+        grid-template-columns:1fr;
+    }
+
+    .research-sidebar{
+        position:static;
+    }
+
+}
