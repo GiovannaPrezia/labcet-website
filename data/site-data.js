@@ -1,9 +1,9 @@
+
 const researchLines = [
   {
     title: "Regulação pós-transcricional em células-tronco",
     tag: "RNA · Ribo-seq · diferenciação",
-    text: "Estudo de mecanismos pós-transcricionais que controlam processamento, estabilidade e tradução de mRNAs durante o comprometimento celular, com foco em RBPs, lncRNAs e diferenciação cardiomiogênica.",
-    link: "pesquisa-regulacao-pos-transcricional.html"
+    text: "Estudo de mecanismos pós-transcricionais que controlam processamento, estabilidade e tradução de mRNAs durante o comprometimento celular, com foco em RBPs, lncRNAs e diferenciação cardiomiogênica."
   },
   {
     title: "Engenharia de tecidos e vesículas extracelulares",
@@ -47,98 +47,270 @@ const publications = [
   {year: 2023, title: "Alternative Methods as Tools for Obesity Research: In Vitro and In Silico Approaches", journal: "Life", doi: "10.3390/life13010108"}
 ];
 
+
 const leaders = [
   {
     name: "Bruno Dallagiovanna Muniz",
-    title: "Pesquisador",
-    area: "Regulação pós-transcricional da expressão gênica em células-tronco",
-    bio: "Pesquisador Titular da Fundação Oswaldo Cruz, com atuação em Biologia Molecular, regulação pós-transcricional da expressão gênica, proteínas de ligação ao RNA, biologia básica de células-tronco e diferenciação celular.",
-    image: "",
-    lattes: "",
-    scholar: ""
-  },
-  {
-    name: "Patrícia Shigunov",
-    title: "Pesquisadora",
-    area: "Doenças genéticas raras e modelos celulares humanos",
-    bio: "Desenvolve pesquisas com células-tronco humanas e modelos in vitro voltados ao estudo molecular de doenças genéticas raras, diferenciação celular e desenvolvimento de ferramentas com potencial translacional.",
-    image: "",
-    lattes: "",
-    scholar: ""
-  },
-  {
-    name: "Marco Augusto Stimamiglio",
-    title: "Pesquisador",
-    area: "Medicina regenerativa, vesículas extracelulares e engenharia de tecidos",
-    bio: "Investiga células-tronco adultas, secretoma, vesículas extracelulares e estratégias de engenharia de tecidos aplicadas à regeneração tecidual e ao desenvolvimento de modelos biológicos.",
-    image: "",
-    lattes: "",
-    scholar: ""
-  },
-  {
-    name: "Alejandro Correa",
-    title: "Pesquisador",
-    area: "Biologia celular, biomateriais e modelos in vitro",
-    bio: "Atua em projetos relacionados à biologia celular, medicina regenerativa, biomateriais, modelos experimentais in vitro e desenvolvimento de abordagens aplicadas à saúde humana.",
-    image: "",
-    lattes: "",
-    scholar: ""
-  },
-  {
-    name: "Alessandra Melo de Aguiar",
-    title: "Pesquisadora",
-    area: "Citotoxicidade, métodos alternativos e poluentes ambientais",
-    bio: "Atua em estudos voltados ao desenvolvimento de ensaios alternativos ao uso de animais, avaliação de citotoxicidade, nanotecnologia e efeitos de compostos ambientais em modelos celulares.",
-    image: "",
+    title: "Chefe do Laboratório",
+    area: "Biologia Molecular • Regulação Pós-Transcricional • Células-Tronco",
+    bio: "Possui graduação em Ciências Biológicas pela Universidad de la República e doutorado em Biologia Molecular pela Universidad de Granada. É Pesquisador Titular da Fundação Oswaldo Cruz (Fiocruz) e atua no estudo dos mecanismos de regulação pós-transcricional da expressão gênica em organismos eucariotos, com foco em proteínas de ligação ao RNA, biologia básica de células-tronco e diferenciação celular. É responsável pelo Laboratório de Biologia Básica de Células-Tronco (LabCET) e foi Diretor do Instituto Carlos Chagas (Fiocruz Paraná) entre 2017 e 2021.",
+    image: "assets/team/bruno_dallagiovanna.jpg",
     lattes: "",
     scholar: ""
   }
 ];
 
 const team = [
-  {name:"Crisciele Kuligovski", role:"Lab manager", area:"Mestre em Saúde"},
-  {name:"Humberto Doriguêtto Gravina", role:"Pós-doc", area:"Biologia Molecular, Bioquímica e Imunologia"},
-  {name:"Isabelle Leticia Zaboroski", role:"Pós-doc", area:"Doenças genéticas raras"},
-  {name:"Maria Julia Barison", role:"Pós-doc", area:"Biologia Celular, Biologia Molecular, Bioquímica e Medicina Regenerativa"},
-  {name:"Maiara Vicentini", role:"Pós-doc", area:"Isolamento de vesículas / Medicina Regenerativa"},
-  {name:"Rubens Gomes Júnior", role:"Pós-doc", area:"Regulação pós-transcricional na cardiomiogênese"},
-  {name:"Vivien Patricia Garbin", role:"Pós-doc", area:"Medicina Regenerativa"},
+  {
+    name: "Crisciele Kuligovski",
+    role: "Lab manager",
+    degree: "Mestre em Saúde",
+    area: "",
+    lattes: "http://lattes.cnpq.br/4570976955280649",
+    image: "assets/team/crisciele_kuligovski.jpg"
+  },
 
-  {name:"Annanda Lyra Ribeiro", role:"Doutoranda", area:"Regulação pós-transcricional de células-tronco pluripotentes e lncRNAs"},
-  {name:"Evelin Brandão da Silva", role:"Doutoranda", area:"Doenças genéticas raras"},
-  {name:"Juliana Pamplona", role:"Doutoranda", area:"Citotoxicidade"},
-  {name:"Rodrigo Perez Lucas", role:"Doutorando", area:"Engenharia de tecidos e terapia celular"},
-  {name:"Rhaíza Stella Vieira França", role:"Doutoranda", area:"Biologia Molecular"},
-  {name:"Ronaldo Figueira de Oliveira", role:"Doutorando", area:"Medicina Regenerativa"},
+  {
+    name: "Humberto Doriguêtto Gravina",
+    role: "Pós-doc",
+    degree: "Mestre e Doutor em Bioquímica e Imunologia",
+    area: "Biologia Molecular, Bioquímica e Imunologia",
+    lattes: "http://lattes.cnpq.br/7232663422938540",
+    image: "assets/team/humberto_gravina.jpg"
+  },
+  {
+    name: "Isabelle Leticia Zaboroski",
+    role: "Pós-doc",
+    degree: "Mestre e Doutora em Biociências e Biotecnologia",
+    area: "Doenças genéticas raras",
+    lattes: "http://lattes.cnpq.br/1171970304000430",
+    image: "assets/team/isabelle_zaboroski.jpg"
+  },
+  {
+    name: "Maria Julia Barison",
+    role: "Pós-doc",
+    degree: "Mestre e Doutora em Biociências e Biotecnologia",
+    area: "Biologia Celular, Biologia Molecular, Bioquímica e Medicina Regenerativa",
+    lattes: "http://lattes.cnpq.br/1171970304000430",
+    image: "assets/team/maria_julia_barison.jpg"
+  },
+  {
+    name: "Maiara Vicentini",
+    role: "Pós-doc",
+    degree: "Ciências Biológicas",
+    area: "Isolamento de vesículas / Medicina Regenerativa",
+    lattes: "http://lattes.cnpq.br/1651763279045527",
+    image: "assets/team/maiara_vicentini.jpg"
+  },
+  {
+    name: "Rubens Gomes Júnior",
+    role: "Pós-doc",
+    degree: "Ciências Biológicas",
+    area: "Regulação pós-transcricional na cardiomiogênese",
+    lattes: "http://lattes.cnpq.br/7451808550815896",
+    image: "assets/team/rubens_gomes_junior.jpg"
+  },
+  {
+    name: "Vivien Patricia Garbin",
+    role: "Pós-doc",
+    degree: "Ciências Biológicas",
+    area: "Medicina Regenerativa",
+    lattes: "http://lattes.cnpq.br/4341438450303259",
+    image: "assets/team/vivien_garbin.jpg"
+  },
 
-  {name:"Bruna Follador Bordim", role:"Mestranda", area:"Citotoxicidade"},
-  {name:"Gabriela Maria da Costa Ferreira", role:"Mestranda", area:"Medicina Regenerativa"},
-  {name:"Isabella Aguiar Dantas", role:"Mestranda", area:"Biologia Molecular"},
-  {name:"Julia Marques", role:"Mestranda", area:"Medicina Regenerativa"},
-  {name:"Luísa Lencioni de Mendonça", role:"Mestranda", area:"Medicina Regenerativa / Bioimpressão de Células-Tronco"},
-  {name:"Rafaela Martins", role:"Mestranda", area:"Medicina Regenerativa"},
-  {name:"Sandra Christina Kolodziejski", role:"Mestranda", area:"Toxicologia Celular"},
+  {
+    name: "Annanda Lyra Ribeiro",
+    role: "Doutorado",
+    degree: "Bacharelado em Ciências Biológicas",
+    area: "Regulação pós-transcricional de células-tronco pluripotentes durante a diferenciação para folhetos embrionários, com foco em RNAs longos não codificantes",
+    lattes: "http://lattes.cnpq.br/7233586047722273",
+    image: "assets/team/annanda_ribeiro.jpg"
+  },
+  {
+    name: "Evelin Brandão da Silva",
+    role: "Doutorado",
+    degree: "Ciências Biológicas",
+    area: "Doenças genéticas raras",
+    lattes: "http://lattes.cnpq.br/5513757972669868",
+    image: "assets/team/evelin_brandao.jpg"
+  },
+  {
+    name: "Juliana Pamplona",
+    role: "Doutorado",
+    degree: "Ciências Biológicas",
+    area: "Citotoxicidade",
+    lattes: "http://lattes.cnpq.br/8828426880947114",
+    image: "assets/team/juliana_pamplona.jpg"
+  },
+  {
+    name: "Rodrigo Perez Lucas",
+    role: "Doutorado",
+    degree: "Biologia Humana",
+    area: "Engenharia de tecidos e terapia celular",
+    lattes: "https://lattes.cnpq.br/2859186046529995",
+    image: "assets/team/rodrigo_perez_lucas.jpg"
+  },
+  {
+    name: "Rhaíza Stella Vieira França",
+    role: "Doutorado",
+    degree: "Engenharia de Bioprocessos",
+    area: "Biologia Molecular",
+    lattes: "http://lattes.cnpq.br/3834851620107828",
+    image: "assets/team/rhaiza_franca.jpg"
+  },
+  {
+    name: "Ronaldo Figueira de Oliveira",
+    role: "Doutorado",
+    degree: "Ciências Biológicas",
+    area: "Medicina Regenerativa",
+    lattes: "http://lattes.cnpq.br/5414583578149011",
+    image: "assets/team/ronaldo_oliveira.jpg"
+  },
 
-  {name:"Alessandra Conti Gomes de Souza", role:"Apoio técnico de projeto", area:"Citotoxicidade"},
-  {name:"Giovanna Nazaré de Barros Prezia", role:"Apoio técnico de projeto", area:"Bioinformática"},
-  {name:"Luana Pescke Soares", role:"Apoio técnico de projeto", area:"Engenharia genética e cultivo de células e fungos"},
-  {name:"Mateus Teixeira da Rocha", role:"Apoio técnico de projeto", area:"Medicina Regenerativa"},
-  {name:"Letícia Bassani Bonato", role:"Apoio técnico de projeto", area:"Medicina Regenerativa"},
+  {
+    name: "Bruna Follador Bordim",
+    role: "Mestrado",
+    degree: "Biomedicina",
+    area: "Citotoxicidade",
+    lattes: "https://lattes.cnpq.br/1623474513525763",
+    image: "assets/team/bruna_bordim.jpg"
+  },
+  {
+    name: "Gabriela Maria da Costa Ferreira",
+    role: "Mestrado",
+    degree: "Ciências Biomédicas",
+    area: "Medicina Regenerativa",
+    lattes: "http://lattes.cnpq.br/4391369973293077",
+    image: "assets/team/gabriela_ferreira.jpg"
+  },
+  {
+    name: "Isabella Aguiar Dantas",
+    role: "Mestrado",
+    degree: "Engenharia de Bioprocessos e Biotecnologia",
+    area: "Biologia Molecular",
+    lattes: "http://lattes.cnpq.br/2893902155017840",
+    image: "assets/team/isabella_dantas.jpg"
+  },
+  {
+    name: "Julia Marques",
+    role: "Mestrado",
+    degree: "Biomedicina",
+    area: "Medicina Regenerativa",
+    lattes: "http://lattes.cnpq.br/8483352991119076",
+    image: "assets/team/julia_marques.jpg"
+  },
+  {
+    name: "Luísa Lencioni de Mendonça",
+    role: "Mestrado",
+    degree: "Biotecnologia",
+    area: "Medicina Regenerativa / Bioimpressão de Células-Tronco",
+    lattes: "http://lattes.cnpq.br/2452332637680892",
+    image: "assets/team/luisa_lencioni.jpg"
+  },
+  {
+    name: "Rafaela Martins",
+    role: "Mestrado",
+    degree: "Biomedicina",
+    area: "Medicina Regenerativa",
+    lattes: "http://lattes.cnpq.br/3803689196280542",
+    image: "assets/team/rafaela_martins.jpg"
+  },
+  {
+    name: "Sandra Christina Kolodziejski",
+    role: "Mestrado",
+    degree: "Biomedicina",
+    area: "Toxicologia Celular",
+    lattes: "http://lattes.cnpq.br/5533332781508665",
+    image: "assets/team/sandra_kolodziejski.jpg"
+  },
 
-  {name:"Jhenifer Moreira Pietrobelli", role:"Iniciação científica", area:"Medicina Regenerativa"},
-  {name:"José Henrique Rosa Silva", role:"Iniciação científica", area:"Genética humana e biologia molecular"},
-  {name:"Nataly Barbieri Stunff", role:"Iniciação científica", area:"Genética humana e biologia molecular"},
-  {name:"Ana Claudia Takiguchi", role:"Iniciação científica", area:"Medicina Regenerativa"}
+  {
+    name: "Ana Paula Ressetti Abud",
+    role: "Colaboradores",
+    degree: "Ciências Biológicas",
+    area: "Citotoxicidade",
+    lattes: "http://lattes.cnpq.br/8412698346100958",
+    image: "assets/team/ana_paula_abud.jpg"
+  },
+
+  {
+    name: "Alessandra Conti Gomes de Souza",
+    role: "Apoio Técnico de Projeto",
+    degree: "Ciências Biológicas",
+    area: "Citotoxicidade",
+    lattes: "http://lattes.cnpq.br/4429962589169358",
+    image: "assets/team/alessandra_souza.jpg"
+  },
+  {
+    name: "Giovanna Nazaré de Barros Prezia",
+    role: "Apoio Técnico de Projeto",
+    degree: "Biomedicina",
+    area: "Bioinformática",
+    lattes: "http://lattes.cnpq.br/9550518625377894",
+    image: "assets/team/giovanna_prezia.jpg"
+  },
+  {
+    name: "Luana Pescke Soares",
+    role: "Apoio Técnico de Projeto",
+    degree: "Biotecnologia",
+    area: "Engenharia genética e cultivo de células e fungos",
+    lattes: "http://lattes.cnpq.br/9266542493133775",
+    image: "assets/team/luana_soares.jpg"
+  },
+  {
+    name: "Mateus Teixeira da Rocha",
+    role: "Apoio Técnico de Projeto",
+    degree: "Ciências Biológicas - Bacharelado",
+    area: "Medicina Regenerativa",
+    lattes: "https://www.linkedin.com/in/mateus-rocha-449499231",
+    image: "assets/team/mateus_rocha.jpg"
+  },
+  {
+    name: "Letícia Bassani Bonato",
+    role: "Apoio Técnico de Projeto",
+    degree: "Biomedicina",
+    area: "Medicina Regenerativa",
+    lattes: "https://lattes.cnpq.br/6438091450502153",
+    image: "assets/team/leticia_bonato.jpg"
+  },
+
+  {
+    name: "Jhenifer Moreira Pietrobelli",
+    role: "Iniciação Científica",
+    degree: "Graduanda em Biomedicina",
+    area: "Medicina Regenerativa",
+    lattes: "http://lattes.cnpq.br/3122418754272390",
+    image: "assets/team/jhenifer_pietrobelli.jpg"
+  },
+  {
+    name: "José Henrique Rosa Silva",
+    role: "Iniciação Científica",
+    degree: "Graduando em Biomedicina",
+    area: "Genética humana e biologia molecular",
+    lattes: "https://lattes.cnpq.br/8025775630673959",
+    image: "assets/team/jose_henrique_silva.jpg"
+  },
+  {
+    name: "Nataly Barbieri Stunff",
+    role: "Iniciação Científica",
+    degree: "Graduanda em Biomedicina",
+    area: "Genética humana e biologia molecular",
+    lattes: "http://lattes.cnpq.br/8804772583967646",
+    image: "assets/team/nataly_stunff.jpg"
+  },
+  {
+    name: "Ana Claudia Takiguchi",
+    role: "Iniciação Científica",
+    degree: "Graduanda em Ciências Biológicas - Bacharelado",
+    area: "Medicina Regenerativa",
+    lattes: "http://lattes.cnpq.br/7739710363843070",
+    image: "assets/team/ana_claudia_takiguchi.jpg"
+  }
 ];
 
 const news = [
   {date:"2026-06-19", title:"Novo site do LabCET em desenvolvimento", text:"A equipe está reorganizando linhas de pesquisa, publicações, galeria e notícias em um formato moderno e atualizável."},
   {date:"2025-05-01", title:"Publicação em PLOS ONE", text:"Artigo sobre vetor de marcação por proximidade em células-tronco humanas publicado em 2025."},
   {date:"2024-06-01", title:"CARDEL e desenvolvimento cardíaco humano", text:"Estudo publicado em Cells destaca lncRNA ativado durante o desenvolvimento cardíaco humano."}
-];
-
-const news = [
-  {date: "2026-06-19", title: "Novo site do LabCET em desenvolvimento", text: "A equipe está reorganizando linhas de pesquisa, publicações, galeria e notícias em um formato moderno e atualizável."},
-  {date: "2025-05-01", title: "Publicação em PLOS ONE", text: "Artigo sobre vetor de marcação por proximidade em células-tronco humanas publicado em 2025."},
-  {date: "2024-06-01", title: "CARDEL e desenvolvimento cardíaco humano", text: "Estudo publicado em Cells destaca lncRNA ativado durante o desenvolvimento cardíaco humano."}
 ];
