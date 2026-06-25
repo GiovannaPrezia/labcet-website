@@ -6,11 +6,24 @@ function currentPage(){ return location.pathname.split("/").pop() || "index.html
 function renderResearch(targetId, limit=null){
   const el = document.getElementById(targetId);
   if(!el) return;
+
   const input = document.getElementById("research-search");
   const q = normalize(input ? input.value : "");
-  let items = researchLines.filter(item => normalize(item.title + item.tag + item.text).includes(q));
+
+  let items = researchLines.filter(item =>
+    normalize(item.title + item.tag + item.text).includes(q)
+  );
+
   if(limit) items = items.slice(0, limit);
-  el.innerHTML = items.map(item => `<article class="card"><span class="tag">${item.tag}</span><h3>${item.title}</h3><p>${item.text}</p></article>`).join("");
+
+  el.innerHTML = items.map(item => `
+    <article class="card">
+      <span class="tag">${item.tag}</span>
+      <h3>${item.title}</h3>
+      <p>${item.text}</p>
+      ${item.link ? `<a class="text-link card-link" href="${item.link}">Saiba mais →</a>` : ""}
+    </article>
+  `).join("");
 }
 
 let activeYear = "Todos";
