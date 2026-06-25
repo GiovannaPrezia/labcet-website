@@ -369,3 +369,36 @@ footer{text-align:center;color:var(--muted);padding:28px}
     position:static;
   }
 }
+
+
+.home-after-hero{
+  display:grid;
+  grid-template-columns:1fr 1fr 420px;
+  gap:36px;
+  align-items:start;
+  padding-top:38px;
+}
+
+.home-news-card{
+  background:rgba(255,255,255,.94);
+  border:1px solid var(--line);
+  border-radius:32px;
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+
+.home-news-card h2{
+  margin:12px 0 20px;
+}
+
+.about-description p{
+  color:var(--muted);
+  line-height:1.75;
+  font-size:18px;
+}
+
+@media(max-width:1050px){
+  .home-after-hero{
+    grid-template-columns:1fr;
+  }
+}
