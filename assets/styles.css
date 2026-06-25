@@ -370,11 +370,17 @@ footer{text-align:center;color:var(--muted);padding:28px}
   }
 }
 /* ===== HOME - SOBRE + NOTÍCIAS ===== */
+
 .home-after-hero{
   display:grid;
-  grid-template-columns:1.45fr 420px;
+  grid-template-columns:minmax(0, 720px) 420px;
   gap:56px;
   align-items:start;
+  justify-content:center;
+}
+
+.about-content{
+  max-width:720px;
 }
 
 .about-content h2{
@@ -383,7 +389,7 @@ footer{text-align:center;color:var(--muted);padding:28px}
 }
 
 .about-description{
-  max-width:760px;
+  max-width:720px;
 }
 
 .about-description p{
